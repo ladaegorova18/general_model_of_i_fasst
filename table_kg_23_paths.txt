@@ -1,0 +1,78 @@
+╒═════════════════════════════════════════════════════════════════════╤═══════════════════════════════════════════╤═══════════════════════════════════════════╤═══════════════╕
+│ path                                                                │ lifeline 1                                │ lifeline 2                                │   path_length │
+╞═════════════════════════════════════════════════════════════════════╪═══════════════════════════════════════════╪═══════════════════════════════════════════╪═══════════════╡
+│ XXXXX-> fwVerifier 24 -> fwLoader 10                                     │ EAID_LL000000_8CB4_BC9B_A96B_1C86F13598CC │ EAID_LL000000_8428_2537_B09D_1BD0E912D96C │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ -> fwVerifier 24 -> Firmware Loader 15                              │ EAID_LL000000_8CB4_BC9B_A96B_1C86F13598CC │ EAID_LL000000_2CF8_D260_9D14_7703597ADA94 │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ XXXXX -> fwVerifier 13 -> fwLoader 43                                     │ EAID_LL000000_8CB4_BC9B_965C_6C234ACC0C9D │ EAID_LL000000_8428_2537_AFDB_DA7961EDFD97 │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ -> fwVerifier 4 -> fwLoader 2                                       │ EAID_LL000000_3D1C_4643_AAF1_663DC1625107 │ EAID_LL000000_B3FF_CE1D_B92E_A1DF8B0B6F44 │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ XXXXX-> fwVerifier 5 -> NRF1 sequence -> fwLoader 3                      │ EAID_LL000000_C162_5107_968B_EE6D4D0947BD │ EAID_LL000000_8B0B_6F44_B4D6_A053186C3CCB │             3 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ -> Firmware Loader 15 -> fwVerifier 24                              │ EAID_LL000000_2CF8_D260_9D14_7703597ADA94 │ EAID_LL000000_8CB4_BC9B_A96B_1C86F13598CC │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ XXXXX -> fwLoader 3 -> fwVerifier 4                                       │ EAID_LL000000_8B0B_6F44_B4D6_A053186C3CCB │ EAID_LL000000_3D1C_4643_AAF1_663DC1625107 │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+│ XXXXX -> fwLoader 2 -> fwVerifier 4                                       │ EAID_LL000000_B3FF_CE1D_B92E_A1DF8B0B6F44 │ EAID_LL000000_3D1C_4643_AAF1_663DC1625107 │             2 │
+├─────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────┼───────────────────────────────────────────┼───────────────┤
+╘═════════════════════════════════════════════════════════════════════╧═══════════════════════════════════════════╧═══════════════════════════════════════════╧═══════════════╛
+
+
+
+
+
+
+
+
+
+Not equal:  fwVerifier 24 fwLoader 10
+path fwVerifier 24 fwLoader 10 is not relevant, continue
+Equal:  fwVerifier 24 Firmware Loader 15
+path fwVerifier 8 fwLoader 37 is not relevant, continue
+Not equal:  fwVerifier 13 fwLoader 43
+path fwVerifier 13 fwLoader 43 is not relevant, continue
+path fwVerifier 13 fwLoader is not relevant, continue   
+path fwVerifier 23 fwLoader 45 is not relevant, continue
+Equal:  fwVerifier 10 fwLoader 49
+Equal:  fwVerifier 11 fwLoader 40
+Equal:  fwVerifier 12 fwLoader 26
+path fwVerifier 14 fwLoader 27 is not relevant, continue
+path fwVerifier 16 fwLoader is not relevant, continue   
+Equal:  fwVerifier 18 NRF5 sequence 6
+path fwVerifier 19 fwLoader 49 is not relevant, continue
+path fwVerifier 19 fwLoader 18 is not relevant, continue
+Equal:  fwVerifier 20 fwLoader 51
+Equal:  fwVerifier 21 fwLoader 44
+path fwVerifier 22 fwLoader 27 is not relevant, continue
+path fwVerifier 25 fwLoader is not relevant, continue 
+Equal:  fwVerifier 3 NRF2 sequence 2
+Not equal:  fwVerifier 4 fwLoader 2
+Not equal:  fwVerifier 5 NRF1 sequence
+Equal:  NRF1 sequence fwLoader 3
+path fwVerifier 5 fwLoader 3 is not relevant, continue
+Equal:  fwVerifier 6 fwLoader 47
+Equal:  fwVerifier fwLoader
+Not equal:  fwLoader 32 fwVerifier 24
+path fwLoader 10 fwVerifier 23 is not relevant, continue
+path fwLoader 34 fwVerifier 24 is not relevant, continue
+path fwLoader 37 fwVerifier 8 is not relevant, continue 
+path fwLoader 41 fwVerifier 21 is not relevant, continue
+path fwLoader 43 fwVerifier 13 is not relevant, continue
+Equal:  fwLoader 44 fwVerifier 21
+path fwLoader 44 fwVerifier 9 is not relevant, continue 
+path fwLoader 46 fwVerifier 23 is not relevant, continue
+path fwLoader 49 fwVerifier 19 is not relevant, continue
+Equal:  fwLoader 50 fwVerifier 9
+Equal:  fwLoader 6 fwVerifier 23
+Equal:  fwLoader 8 fwVerifier 7
+path fwLoader 26 fwVerifier 10 is not relevant, continue
+Equal:  Firmware Loader 15 fwVerifier 24
+Not equal:  fwLoader 3 fwVerifier 4
+path fwLoader 3 fwVerifier 4 is not relevant, continue
+Not equal:  fwLoader 2 fwVerifier 4
+path fwLoader 2 fwVerifier 4 is not relevant, continue
+Equal:  fwLoader 15 fwVerifier 22
+path fwLoader 29 fwVerifier 11 is not relevant, continue

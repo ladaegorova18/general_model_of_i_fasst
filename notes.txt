@@ -1,0 +1,166 @@
+eyJhbGciOiJQUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ii4rQC4rIiwibWl4cGFuZWxJZCI6IiRkZXZpY2U6MTk0ZmE1NWY3MzE0YmQtMDg4OTEwZTk1ZDJmY2YtMjYwMTFiNTEtMWZhNDAwLTE5NGZhNTVmNzMxNGJkIiwibWl4cGFuZWxQcm9qZWN0SWQiOiI0YmZiMjQxNGFiOTczYzc0MWI2ZjA2N2JmMDZkNTU3NSIsIm9yZyI6Ii4qIiwicHViIjoibmVvNGouY29tIiwicmVnIjoiICIsInN1YiI6Im5lbzRqLWRlc2t0b3AiLCJleHAiOjE3NzA5MDI4NDQsInZlciI6IioiLCJpc3MiOiJuZW80ai5jb20iLCJuYmYiOjE3MzkzNjY4NDQsImlhdCI6MTczOTM2Njg0NCwianRpIjoiTGZBTkRjQThFIn0.NtFTQvz3OEH3aRLTXWpuIJQgiJRMm4qsHIaEnnGU0Lv3NJjEl79zPDRW8kX-rMwnjCyrpeGxsoO-crhGsnRg7byNi0Jy_jtC43ym7_z-GNFBJWIK2FZj_nggR6JhuO9u4i8HsMU0lMih4ts9Eharm7xRiY0Cj53fPzFI373sfDjyK6dROEeNTjb-Vh2PmsOo2c_5kKIh_gILIbsviOThCgAgRCz-PzZez-cTj0meYE_7XLMssOues6FCQgfB3M0fNic1PnJcg23dLQEYnW9BJg3L7wgLP27RpL1NrpWhypv_pINju7gicHoRVL_IggsdnUsO2RQBvbV32fg-zzAmIw
+
+
+http://proxy-http.esisar.grenoble-inp.fr:3128
+
+pip --proxy http://proxy-http.esisar.grenoble-inp.fr:3128 install lxml 
+
+pip --proxy http://proxy-http.esisar.grenoble-inp.fr:3128 install py2neo
+
+ALTER USER neo4j SET PASSWORD 'neo4jneo4j';
+
+match (n) return n
+
+MATCH (n) DETACH DELETE n
+
+call apoc.import.xml("file:///inputfile2.xml", {})
+
+removed unnecessary part of the xml file
+
+EAID_A66FF1C0_63E7_CB10_93DE_3DFBF84FE22A  ---> EAPK_BAFE23FC_C21C_13B1_91C6_A897E15AE324
+
+bash git remote add general-model-of-safsecfi https://gricad-gitlab.univ-grenoble-alpes.fr/desuerta/general-model-of-safsecfi
+
+git config --global http.proxy http://proxy-http.esisar.grenoble-inp.fr:3128
+git config --global https.proxy https://proxy-http.esisar.grenoble-inp.fr:3128
+
+EAID_A339D935_8428_2537_AFDB_DA7961EDFD97
+
+Fetch all nodes:
+START n=node () RETURN n 
+OR
+
+MATCH (n) RETURN n
+Displays the nodes and the relationships:
+MATCH (n) MATCH (n)-[r]-() RETURN n,r
+OR
+
+START n=node() MATCH (n)-[r]->(m) RETURN n,r,m 
+Match nodes and relationships:
+MATCH (a:Policy)-[:APPLIES_TO]-(Cluster) WHERE a.name = "pol-1nils" RETURN a, Cluster
+Get all object of particular nodes:
+MATCH (list:Policy) RETURN list
+Bound to the entities between two nodes:
+MATCH (a:WorkLoad)-[b:APPLIES_TO]->(c:Policy) WHERE c.name = "shamshad" RETURN a,b,c;
+
+
+lifeline <---- uml:OccurrenceSpecification ----> MESSAGE ----> uml:OccurrenceSpecification ----> lifeline
+The idea is to add extra relationships between lifelines based on the occurence specifications. It will save the initial structure and make the search easier.
+
+EAID_7228FE25_DE42_48b5_91BE_C5A6B3FFCE1D is not in the set of instSpec 
+but there is a lifeline EAID_LL000000_DE42_48b5_91BE_C5A6B3FFCE1D
+
+
+Safety integrity check 27  relevant_lifelines:  [] relevant_msgs:  []
+Secure boot 22  relevant_lifelines:  [] relevant_msgs:  []
+
+Safety integrity check 32  relevant_lifelines:  ['Firmware Loader 32'] relevant_msgs:  ['bootLoad()', None, None]
+Secure boot 24  relevant_lifelines:  ['Firmware Verifier 24'] relevant_msgs:  ['verifyFirmwareSignature()', 'decryptFirmware()']
+
+for each feature create a list of its message exchanges and 
+for each path check its message exchanges: 2 lifelines if there are 2 lifelines of the same package or 
+lifeline is either in the first or second package
+
+ownedMessages:
+it looks at src and dst of messages and checks it they are in LLOccurSpecID_set (mapping of OS to covered)
+and then takes their LL from there and check if they are in mappedLLID_classifierID_dict 
+
+mappedLLID_classifierID_dict has gates, LL that start not from "EAID_LL" and LL that have their IS in this package
+
+usedMessages:
+it goes through all lifeline_set and checks sequences, if their src and dst are in LLsInCombinedFragment_set (lifeline_set)
+
+LLsInCombinedFragment_set has lifelines that are declared in the feature and 
+idrefs of IS or components that may not belong to the feature and LL that are covered with OS.
+
+1. Why Secure boot 4 is not relevant is not in the list
+there is a message exchange, but the src is not in lifeline_set
+looks for sequences, LLsInCombinedFragment_set has lifeline of safety check 2, but not IS of it.
+
+In this case there is a message exchange, sequence, but the src is not in the set
+
+"Add sequence messages to graphs"
+SEQUENCE_MESSAGE is an edge between two IS and we will look at it and check if each feature 
+has a link to this IS in itself and if this message exchange is not mentioned in 
+
+So feature has to have either lifeline or a link to IS (idref)
+
+There is Occurence Specification with this LL but not IS. Now do they send messages then? EAID_91BEC5A6_B3FF_CE1D_B92E_A1DF8B0B6F44
+It looks at sequences and tries to find entities in OS
+
+Okay so I can describe this case in the report
+
+2. we need to find out why fwVerifier 24 has only 2 edges messages (to itself) and so no paths
+<Sequence xmi:id="EAID_63A4D3A9_D15B_4c71_A55B_71E3D6D33620" start="EAID_A55B7E51_8CB4_BC9B_A96B_1C86F13598CC" end="EAID_A339D935_8428_2537_B09D_1BD0E912D96C"/>
+fwVerifier 24 -> fwLoader 10
+
+The message itself is not in the diagram of feature 1 or feature 2! 
+<Sequence xmi:id="EAID_C55C1270_6972_43c0_A75E_52B0DCD4BDE2" start="EAID_BDE075EE_3D1C_4643_AAF1_663DC1625107" end="EAID_91BEC5A6_B3FF_CE1D_B92E_A1DF8B0B6F44"/>
+
+3. -> fwVerifier 13 -> fwLoader 43
+LL 13 EAID_LL000000_8CB4_BC9B_965C_6C234ACC0C9D
+
+So, if the feature has the message it also has to have IS of its lifelines
+
+get message package 
+find IS of message nodes and their nodes should be in the feature
+
+start_id = ''EAID_A55B7E51_8CB4_BC9B_965C_6C234ACC0C9D'
+end_id = 'EAID_A339D935_8428_2537_AFDB_DA7961EDFD97'
+
+seq_id = ''EAID_4C2BEE5F_1A1F_4a7b_AB32_27064401C57F'
+
+mappedLLID_classifierID_dict = {'EAID_LL000000_8428_2537_AFDB_DA7961EDFD97': 'EAID_A56B23EF_2944_71C3_817F_8E5012F654D1', 'EAID_A55B7E51_8CB4_BC9B_965C_6C234ACC0C9D': 'EAID_8951E9DA_1663_B252_B025_B79164001836'}
+
+4. -> fwVerifier 5 -> NRF1 sequence -> fwLoader 3
+The message itself is not in the diagram of feature 1 or feature 2
+
+Extra paths:
+1) fwVerifier 24 -> fwLoader 10
+fwVerifier 5 -> NRF1 sequence -> fwLoader 3
+
+Added a condition that the message itself should belong to a diagram of 1st or 2nd feature
+
+2) fwVerifier 13 -> fwLoader 43
+fwLoader 3 -> fwVerifier 4
+fwLoader 2 -> fwVerifier 4
+
+Added a condition that both lifelines should be in the same diagram to be owned
+
+
+3) -> fwVerifier 24 -> Firmware Loader 15
+-> Firmware Loader 15 -> fwVerifier 24
+-> fwVerifier 4 -> fwLoader 2
+
+
+
+xmi:type="uml:Lifeline" xmi:id="EAID_LL000000_2CF8_D260_9D14_7703597ADA94" name="Firmware Loader 15"
+xmi:type="uml:Lifeline" xmi:id="EAID_LL000000_8CB4_BC9B_A96B_1C86F13598CC" name="fwVerifier 24"
+
+-> fwVerifier 4 -> fwLoader 2
+EAPK_B679A45A_12B9_0D90_ACEB_A15866920A8F
+
+message id = EAID_C55C1270_6972_43c0_A75E_52B0DCD4BDE2
+
+message is not in owned (no IS in the package) or used messages 
+
+For I-FASST:
+lifelines are in the same package and it is a parent package for one of the lifeline's feature
+
+if we have a chain a -> b where b is not relevant and b -> c in two different packages, then it is not possible to find relevant intractions between diagrams
+(b should be in two packages in the same time).
+however, we can not consider this condition for b, because as it is not relevant, we can not rely on if is owned or not
+
+if message goes to instance specification, consider its package 
+
+add new element - sequence, and then check messages from them if they belong to the same feature package
+
+package should be equal to package of IS
+
+
+18 -> 16
+3 nodes in the same package, the last node has the same package and pp with its IS
+
+MATCH p=(n:`uml:Lifeline`) - [r1:REPRESENTS] -> (m) <- [r2:CLASSIFIES] - (t) <- [r3:REPRESENTS] - (t2)  RETURN p 
+2 paths
+

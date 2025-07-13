@@ -1,0 +1,42 @@
+['Secure boot 23', 
+'Secure boot 22', 
+'Secure boot 19', 
+'Secure boot 18', 
+'Secure boot 16', 
+'Safety integrity check 14', 
+'Safety integrity check 15', 
+'Safety integrity check 26', 
+'Safety integrity check 27', 
+'Safety integrity check 30', 
+'Safety integrity check 40', 
+'Safety integrity check 44', 
+'Safety integrity check 47', 
+'Safety integrity check 49', 
+'Safety integrity check 50', 
+'Safety integrity check 51', 
+'Safety integrity check 8', 
+'Safety integrity check of automotive firmware']
+
+
+
+IS -> classifier -> component
+
+lifeline -> represents -> ownedAttribute -> component or IS
+
+
+mappedLLOccurSpecID_LLID_dict: occ spec -> covered (inst spec or lifeline)
+<fragment xmi:type="uml:OccurrenceSpecification" xmi:id="EAID_FR000005_8CB4_BC9B_821A_16E9195EDD2E" covered="EAID_LL000000_8CB4_BC9B_821A_16E9195EDD2E"/>
+<fragment xmi:type="uml:OccurrenceSpecification" xmi:id="EAID_FR000003_C529_2261_9D7A_26602389077F" covered="EAID_LL000000_C529_2261_9D7A_26602389077F"/>
+<fragment xmi:type="uml:OccurrenceSpecification" xmi:id="EAID_FR000002_C529_2261_9D7A_26602389077F" covered="EAID_LL000000_C529_2261_9D7A_26602389077F"/>
+<fragment xmi:type="uml:OccurrenceSpecification" xmi:id="EAID_FR000000_26E0_FC16_BAC2_B2725CFE0749" covered="EAID_97772D74_26E0_FC16_BAC2_B2725CFE0749"/>
+
+
+mappedLLID_classifierID_dict: inst spec or lifeline -> component
+
+lifeline (starts with LL000000) that has represents not in this feature
+
+message with send/receive where scr or dst are either lifeline that have represents component
+ in this feature or IS
+
+lifeline either not in this package or represents component
+ in this feature

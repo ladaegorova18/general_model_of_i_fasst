@@ -1,0 +1,389 @@
+﻿[
+  {
+    "n": {
+      "identity": 193,
+      "labels": [
+        "EAID_CB000000_6BB_28FF_1023_8C1B_0AE6982FCFA"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "EA_Collaboration1",
+        "type": "uml:Collaboration"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:193"
+    }
+  },
+  {
+    "n": {
+      "identity": 194,
+      "labels": [
+        "EAID_IN000000_6BB_28FF_1023_8C1B_0AE6982FCFA"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "EA_Interaction1",
+        "type": "uml:Interaction"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:194"
+    }
+  },
+  {
+    "n": {
+      "identity": 195,
+      "labels": [
+        "EAID_C47D4A3C_6462_417a_9C75_3AA5E11D64F7"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:195"
+    }
+  },
+  {
+    "n": {
+      "identity": 196,
+      "labels": [
+        "EAID_3533CB2C_F8C7_4299_AC5A_71C267040437"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:196"
+    }
+  },
+  {
+    "n": {
+      "identity": 197,
+      "labels": [
+        "EAID_0488AE3C_88EB_4164_859C_D5650241F329"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:197"
+    }
+  },
+  {
+    "n": {
+      "identity": 198,
+      "labels": [
+        "EAID_FC87141D_8D7B_40a0_8C0C_086201ED2E3D"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:198"
+    }
+  },
+  {
+    "n": {
+      "identity": 199,
+      "labels": [
+        "EAID_7228FE25_DE42_48b5_91BE_C5A6B3FFCE1D"
+      ],
+      "properties": {
+        "package": "EAPK_BD1C86BB_28FF_1023_8C1B_0AE6982FCFA6",
+        "name": "fwLoader",
+        "type": "uml:InstanceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:199"
+    }
+  },
+  {
+    "n": {
+      "identity": 200,
+      "labels": [
+        "EAID_CB000000_AAA_C2E4_A9FB_A47A_5746D0D5777"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "EA_Collaboration2",
+        "type": "uml:Collaboration"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:200"
+    }
+  },
+  {
+    "n": {
+      "identity": 201,
+      "labels": [
+        "EAID_IN000000_AAA_C2E4_A9FB_A47A_5746D0D5777"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "EA_Interaction2",
+        "type": "uml:Interaction"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:201"
+    }
+  },
+  {
+    "n": {
+      "identity": 202,
+      "labels": [
+        "EAID_FR000001_0623_42d3_AF83_9B088B8C22FC"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "type": "uml:OccurrenceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:202"
+    }
+  },
+  {
+    "n": {
+      "identity": 203,
+      "labels": [
+        "EAID_FR000002_0623_42d3_AF83_9B088B8C22FC"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "type": "uml:OccurrenceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:203"
+    }
+  },
+  {
+    "n": {
+      "identity": 204,
+      "labels": [
+        "EAID_FR000003_0623_42d3_AF83_9B088B8C22FC"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "type": "uml:OccurrenceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:204"
+    }
+  },
+  {
+    "n": {
+      "identity": 205,
+      "labels": [
+        "EAID_FR000004_0623_42d3_AF83_9B088B8C22FC"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "type": "uml:OccurrenceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:205"
+    }
+  },
+  {
+    "n": {
+      "identity": 206,
+      "labels": [
+        "EAID_FR000000_0623_42d3_AF83_9B088B8C22FC"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "type": "uml:OccurrenceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:206"
+    }
+  },
+  {
+    "n": {
+      "identity": 207,
+      "labels": [
+        "EAID_FR000000_DE42_48b5_91BE_C5A6B3FFCE1D"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "type": "uml:OccurrenceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:207"
+    }
+  },
+  {
+    "n": {
+      "identity": 208,
+      "labels": [
+        "EAID_F310DC17_CC3D_40f0_B5B8_85349845FCA2"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:208"
+    }
+  },
+  {
+    "n": {
+      "identity": 209,
+      "labels": [
+        "EAID_CBE57451_B1DE_4646_B71C_CBB723BE42F8"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:209"
+    }
+  },
+  {
+    "n": {
+      "identity": 210,
+      "labels": [
+        "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:210"
+    }
+  },
+  {
+    "n": {
+      "identity": 211,
+      "labels": [
+        "EAID_56832311_0623_42d3_AF83_9B088B8C22FC"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "fwVerifier",
+        "type": "uml:InstanceSpecification"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:211"
+    }
+  },
+  {
+    "n": {
+      "identity": 212,
+      "labels": [
+        "EAID_77F94FE0_1DB4_4fe7_B4BB_6F619D92E6E6"
+      ],
+      "properties": {
+        "package": "EAPK_93486AAA_C2E4_A9FB_A47A_5746D0D57772",
+        "name": "provide decrypted firmware",
+        "type": "uml:Activity"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:212"
+    }
+  },
+  {
+    "n": {
+      "identity": 213,
+      "labels": [
+        "EAID_AC08816E_63BD_418d_93D4_67926C5F3026"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "type": "uml:CallBehaviorAction",
+        "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339": "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:213"
+    }
+  },
+  {
+    "n": {
+      "identity": 214,
+      "labels": [
+        "EAID_E012AD12_080B_452b_BA3F_9FD58B638894"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:214"
+    }
+  },
+  {
+    "n": {
+      "identity": 215,
+      "labels": [
+        "EAID_A263737B_3D03_8D85_BB28_A9340E017F26"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:215"
+    }
+  },
+  {
+    "n": {
+      "identity": 216,
+      "labels": [
+        "EAID_962EA7C7_4B5D_450c_9406_3D85C91A9C8D"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "type": "uml:CallBehaviorAction",
+        "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339": "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:216"
+    }
+  },
+  {
+    "n": {
+      "identity": 217,
+      "labels": [
+        "EAID_3B5795AF_4D79_423a_8D1C_C4C49A87B74B"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:217"
+    }
+  },
+  {
+    "n": {
+      "identity": 218,
+      "labels": [
+        "EAID_B76C2C73_A670_4592_B45D_A0F9F697779B"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "type": "uml:CallBehaviorAction",
+        "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339": "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:218"
+    }
+  },
+  {
+    "n": {
+      "identity": 219,
+      "labels": [
+        "EAID_086D20F3_CCCB_495d_B38D_3AB66893F6B9"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "name": "None",
+        "type": "None"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:219"
+    }
+  },
+  {
+    "n": {
+      "identity": 220,
+      "labels": [
+        "EAID_93F9F599_5E44_3985_93CB_1EC69F119ACC"
+      ],
+      "properties": {
+        "package": "EAPK_B5DA57A0_AB69_6786_B972_3F19CB76FF40",
+        "name": "Initial",
+        "type": "uml:InitialNode",
+        "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339": "EAID_133D74BE_8E9A_4878_A74A_03E97CE91339"
+      },
+      "elementId": "4:927934c4-fece-4625-9241-e07b1123913e:220"
+    }
+  }
+]
